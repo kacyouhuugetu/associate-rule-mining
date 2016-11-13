@@ -323,13 +323,3 @@ class trie:
 								self.trans.remove([])
 				except ValueError:
 						pass
-				count.append(len(self.trans))
-
-from random import sample
-from random import randint
-				
-items = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o']
-
-def gen_trans(N):
-		return [sample(items,randint(1,len(items))) for i in range(N)]
-
